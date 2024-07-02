@@ -188,8 +188,8 @@
                         <ul class="header--nav-links nav navbar-nav font--secondary">
                             <li class="active"><a href="{% url 'home' %}">Bosh sahifa</a></li>
                             <li><a href="{% url 'about' %}">Biz haqimizda</a></li>
-                            <li><a href="pricing.html">Narxlar</a></li>
-                            <li><a href="#">Xizmatlar</a>
+                            <li><a href="{% url 'price' %}">Narxlar</a></li>
+                            <li><a href="{% url 'service' %}">Xizmatlar</a>
 
                                 {% comment %} <ul class="dropdown-menu font--primary">
                                     <li><a href="services.html">Services</a></li>
@@ -228,7 +228,7 @@
                                 </div>
                             </li> {% endcomment %}
                             <li class="dropdown">
-                                <a href="#" >Shop</a>
+                                <a href="{% url 'shop' %}" >Shop</a>
 
                                 {% comment %} <ul class="font--primary">
                                     <li><a href="shop.html">Shop</a></li>
@@ -238,7 +238,7 @@
                                 </ul> {% endcomment %}
                             </li>
                             <li class="dropdown">
-                                <a href="#">Blog</a>
+                                <a href="{% url 'blog' %}">Blog</a>
 
                                 {% comment %} <ul class="dropdown-menu font--primary">
                                     <li><a href="blog-sidebar-left.html">Blog Sidebar Left</a></li>
@@ -246,7 +246,7 @@
                                     <li><a href="blog-details.html">Blog Details</a></li>
                                 </ul> {% endcomment %}
                             </li>
-                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="{% url 'contact' %}">Contact</a></li>
                         </ul>
                         <!-- Header Nav Links End -->
                     </div>
