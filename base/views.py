@@ -1,10 +1,14 @@
 from django.shortcuts import render
 from django.views.generic import TemplateView
+from .models import Blog
 
 # Create your views here.
 
 class HomePageView(TemplateView):
+    model = Blog
     template_name = 'pages/home.html'
+
+
 
 class AboutPageView(TemplateView):
     template_name = 'pages/about.html'
