@@ -10,7 +10,7 @@ class AboutPageView(TemplateView):
     template_name = "pages/about.html"
 
 class PricingPageView(TemplateView):
-    template_name = "pages/price.html"
+    template_name = "pages/pricing.html"
 
 class ServicePageView(TemplateView):
     template_name = "pages/service.html"
