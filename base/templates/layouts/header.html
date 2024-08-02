@@ -112,10 +112,10 @@
             <div id="headerNav" class="navbar-collapse collapse float--left">
                 <!-- Header Nav Links Start -->
                 <ul class="header--nav-links nav navbar-nav font--secondary">
-                    <li class="active"><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="pricing.html">Pricing</a></li>
-                    <li><a href="#">Service</a></li>
+                    <li><a href="{% url 'home' %}">Home</a></li>
+                    <li><a href="{% url 'about' %}">About</a></li>
+                    <li><a href="{% url 'pricing' %}">Pricing</a></li>
+                    <li><a href="{% url 'service' %}">Service</a></li>
                     {% comment %} <li class="dropdown megamenu">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Pages<i
                                 class="fa fa-angle-down"></i></a>
@@ -147,9 +147,9 @@
                             </div>
                         </div>
                     </li> {% endcomment %}
-                    <li><a href="pricing.html">Shop</a></li>
-                    <li><a href="blog.html">Blog</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="{% url 'shop' %}">Shop</a></li>
+                    <li><a href="{% url 'blog' %}">Blog</a></li>
+                    <li><a href="{% url 'contact' %}">Contact</a></li>
                 </ul>
                 <!-- Header Nav Links End -->
             </div>
