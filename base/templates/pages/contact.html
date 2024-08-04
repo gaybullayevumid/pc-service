@@ -1,0 +1,133 @@
+{% extends "base.html" %}
+{% load static %}
+{% block contact %}
+<!-- Wrapper Start -->
+<div class="wrapper">
+    <!-- Page Header Section Start -->
+    <div class="page-header--section text-center">
+        <!-- Page Title Start -->
+        <div class="page--title pd--130-0" data-bg-img="img/page-header-img.jpg">
+            <div class="container">
+                <h1 class="h1">Contact</h1>
+            </div>
+        </div>
+        <!-- Page Title End -->
+
+        <!-- Page Breadcrumb Start -->
+        <div class="page--breadcrumb font--secondary">
+            <div class="container">
+                <ul class="breadcrumb">
+                    <li><a href="index.html">Quick Fix</a></li>
+                    <li class="active"><span>Contact</span></li>
+                </ul>
+            </div>
+        </div>
+        <!-- Page Breadcrumb End -->
+    </div>
+    <!-- Page Header Section End -->
+
+    <!-- Contact Section Start -->
+    <div class="contact--section pd--100-0-40">
+        <div class="container">
+            <div class="row">
+                <!-- Contact Content Start -->
+                <div class="contact--content col-md-8 pb--60">
+                    <h2 class="contact--title h4">Contact Information</h2>
+
+                    <div class="row">
+                        <div class="col-sm-7">
+                            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+
+                            <p>sage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet ten</p>
+                        </div>
+
+                        <div class="col-sm-5">
+                            <ul>
+                                <li class="fa-home">
+                                    <p>House #896, East Sheprapara Beside  of Hazi Asraf Ali School, Dhaka, Bangladesh.</p>
+                                </li>
+                                <li class="fa-envelope">
+                                    <p><a href="mailto:you@yourmail.com">you@yourmail.com</a>, <a href="mailto:you@yourmail.com">you@yourmail.com</a></p>
+                                </li>
+                                <li class="fa-phone-square">
+                                    <p><a href="tel:+055997766554412">+055997766554412</a>,<a href="tel:005594765243">005594765243</a></p>
+                                </li>
+                                <li class="fa-clock-o">
+                                    <p>Monday - Satarday (09 am to 08 pm)<span>(Sunday Closed)</span></p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div id="map" class="contact--map" data-map-latitude="23.790546" data-map-longitude="90.375583" data-map-zoom="16" data-map-marker="[[23.790546, 90.375583]]"></div>
+                </div>
+                <!-- Contact Content End -->
+
+                <!-- Contact Form Start -->
+                <div class="contact--form col-md-4 pb--60" data-form="ajax">
+                    <h2 class="contact--title h4">Get In Touch</h2>
+
+                    <form action="sendmail.php" method="post">
+                        <div class="status"></div>
+
+                        <div class="form-group">
+                            <input type="text" name="name" class="form-control" placeholder="Name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="email" name="email" class="form-control" placeholder="E-mail Address" required>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="text" name="subject" class="form-control" placeholder="Subject" required>
+                        </div>
+
+                        <div class="form-group">
+                            <textarea name="message" class="form-control" placeholder="Write Message" required></textarea>
+                        </div>
+
+                        <input type="hidden" name="submitType" value="ajax">
+
+                        <button type="submit" class="btn btn-default">Send Message</button>
+                    </form>
+                </div>
+                <!-- Contact Form End -->
+            </div>
+        </div>
+    </div>
+    <!-- Contact Section End -->
+
+    <!-- Call To Action Section Start -->
+    <div class="cta--section bg--color-darkgray">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9">
+                    <!-- Call To Action Content Start -->
+                    <div class="cta--content">
+                        <h2 class="h3">Looking For A Fast &amp; Reliable Repair Service</h2>
+
+                        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
+                    </div>
+                    <!-- Call To Action Content Start -->
+                </div>
+
+                <div class="col-md-3">
+                    <!-- Call To Action Button Start -->
+                    <div class="cta--btn">
+                        <a href="index.html#banner" class="btn btn-default">Get Free Estimate</a>
+                    </div>
+                    <!-- Call To Action Button Start -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Call To Action Section End -->
+
+    <!-- Back To Top Button Start -->
+    <div class="back-to-top-btn">
+        <a href="#" class="btn btn-default active"><i class="fa fa-angle-up"></i></a>
+    </div>
+    <!-- Back To Top Button End -->
+</div>
+<!-- Wrapper End -->
+{% endblock contact %}
