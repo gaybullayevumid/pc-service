@@ -12,4 +12,4 @@ class User(models.Model):
 class Contact(models.Model):
     address = models.CharField()
     email = models.EmailField()
-    phone = models.
+    # phone = models.PhoneNumberField(blank=True)
